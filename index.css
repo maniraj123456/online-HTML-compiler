@@ -1,0 +1,49 @@
+.main
+{
+    height: 100%;
+}
+.right
+{
+    border: 1px solid blue;
+    padding-right: 5px;
+}
+
+#html-element
+{
+    height: 400px;
+    border: 1px solid green;
+    color: white;
+    background-color: black;
+}
+
+#css-element
+{
+    height: 400px;
+    border: 1px solid green;
+    color: yellow;
+    background-color: black;
+}
+
+#js-element
+{
+    height: 400px;
+    border: 1px solid green;
+    color: red;
+    background-color: black;
+}
+
+section
+{
+    border: 1px solid black;
+}
+
+.heading
+{
+    display: grid;
+    text-align: center;
+}
+
+body
+{
+    border: 1px solid black;
+}

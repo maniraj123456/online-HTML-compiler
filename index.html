@@ -1,0 +1,37 @@
+<header>
+  <!-- bootstrap included -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js"></script>
+</header>
+<section>
+    <div class="row heading">
+        <h1><span style="color: lightgray;">HTML</span> 
+            <span style="color: red;"> CSS </span>
+            and 
+            <span style="color: blue;">JS</span> code editor
+        </h1>
+    </div>
+    <div class="row">
+        <button class="btn btn-primary" onclick="generateOutput()">Execute</button>
+    </div>
+    <div class="main row p-2 m-2">
+      <div class="left col-sm-6">
+        <div class="html-element row mt-2">
+          <label for="html-element">HTML</label>
+          <textarea id="html-element" placeholder="HTML"></textarea>
+        </div>
+        <div class="css-element row mt-2">
+          <label for="css-element">CSS</label>
+          <textarea id="css-element" placeholder="CSS"></textarea>
+        </div>
+        <div class="js-element row mt-2">
+          <label for="js-element">JavaScript</label>
+          <textarea id="js-element" placeholder="JavaScript"></textarea>
+        </div>
+      </div>
+      <div class="right col-sm-6 p-2" id="output">
+      </div>
+    </div>
+</section>
