@@ -1,49 +1,45 @@
-.main
-{
-    height: 100%;
+.main {
+  height: 100%;
 }
-.right
-{
-    border: 1px solid blue;
-    padding-right: 5px;
+.right {
+  padding-right: 5px;
 }
 
-#html-element
-{
-    height: 400px;
-    border: 1px solid green;
-    color: white;
-    background-color: black;
+#html-element {
+  height: 400px;
+  color: white;
+  background-color: black;
 }
 
-#css-element
-{
-    height: 400px;
-    border: 1px solid green;
-    color: yellow;
-    background-color: black;
+#css-element {
+  height: 400px;
+  color: yellow;
+  background-color: black;
 }
 
-#js-element
-{
-    height: 400px;
-    border: 1px solid green;
-    color: red;
-    background-color: black;
+#js-element {
+  height: 400px;
+  color: red;
+  background-color: black;
 }
 
-section
-{
-    border: 1px solid black;
+.heading {
+  display: grid;
+  text-align: center;
 }
 
-.heading
-{
-    display: grid;
-    text-align: center;
+#execute-btn {
+  border-radius: 50%;
 }
 
-body
-{
-    border: 1px solid black;
+#html-heading {
+  color: orange;
+}
+
+#css-heading {
+  color: blue;
+}
+
+#js-heading {
+  color: darkgoldenrod;
 }

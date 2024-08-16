@@ -1,21 +1,19 @@
-let html = document.getElementById('html-element');
-let css = document.getElementById('css-element');
-let js = document.getElementById('js-element');
+function generateOutput() {
+  let htmlElement = document.getElementById("html-element");
+  let cssElement = document.getElementById("css-element");
+  let jsElement = document.getElementById("js-element");
+  let outputElement = document.getElementById("output");
 
-(html != null) ? html.addEventListener('input',generateOutput()) : null;
-(css != null) ? css.addEventListener('input',generateOutput()) : null;
-(js != null) ? js.addEventListener('input',generateOutput()) : null;
+  const htmlCode = htmlElement.value;
+  const cssCode = cssElement.value;
+  const jsCode = jsElement.value;
 
-
-function generateOutput()
-{
-    const htmlCode = document.getElementById('html-element').value;
-    const cssCode = document.getElementById('css-element').value;
-    const jsCode = document.getElementById('js-element').value;
-    
-    console.log(" "+htmlCode+" "+cssCode+" "+jsCode);
-    
-    const output = document.getElementById('output');
-    output.innerHTML = 
-    htmlCode + '' + '<style>' + cssCode +'<style/>' + '<script>' +jsCode + '<script>';
- }
+  try {
+    outputElement.innerHTML = htmlCode + `<style>${cssCode}</style>`;
+    const script = document.createElement("script");
+    script.textContent = jsCode;
+    document.body.appendChild(script);
+  } catch (error) {
+    outputElement.innerHTML = "An error occurred: " + error.message;
+  }
+}
