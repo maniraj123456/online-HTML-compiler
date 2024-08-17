@@ -1,3 +1,4 @@
+/* changes are done in DOM */
 function generateOutput() {
   let htmlElement = document.getElementById("html-element");
   let cssElement = document.getElementById("css-element");
