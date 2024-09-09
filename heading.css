@@ -2,7 +2,6 @@
   display: grid;
   text-align: center;
 }
-
 #html-heading {
   color: orange;
 }
@@ -13,4 +12,11 @@
 
 #js-heading {
   color: darkgoldenrod;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  border: none;
+  overflow: hidden !important;
 }
