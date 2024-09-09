@@ -26,11 +26,3 @@
 #execute-btn {
   border-radius: 50%;
 }
-
-iframe
-{
-  width: 100%;       
-  border: none;        
-  overflow: hidden !important;
-  height: auto;
-}

@@ -1,4 +1,3 @@
-
 .heading {
   display: grid;
   text-align: center;
@@ -13,4 +12,11 @@
 
 #js-heading {
   color: darkgoldenrod;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  border: none;
+  overflow: hidden !important;
 }

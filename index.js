@@ -20,11 +20,12 @@ function generateOutput() {
 }
 
 
-// Function to resize iframe to fit content
 function adjustIframeHeight() {
   const iframe = document.querySelector("iframe");
-  console.log(iframe.contentWindow.document.body.scrollHeight + "px");
-  (iframe != null) ? iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px" : null;
+  if (iframe && iframe.contentWindow && iframe.contentWindow.document) {
+    const newHeight = iframe.clientHeight + "px";
+    iframe.style.height = newHeight;
+  }
 }
 
 // Call the function once iframe is loaded
