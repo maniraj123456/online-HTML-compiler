@@ -18,3 +18,15 @@ function generateOutput() {
     outputElement.innerHTML = "An error occurred: " + error.message;
   }
 }
+
+
+function adjustIframeHeight() {
+  const iframe = document.querySelector("iframe");
+  if (iframe && iframe.contentWindow && iframe.contentWindow.document) {
+    const newHeight = iframe.clientHeight + "px";
+    iframe.style.height = newHeight;
+  }
+}
+
+// Call the function once iframe is loaded
+document.querySelector("iframe").onload = adjustIframeHeight();

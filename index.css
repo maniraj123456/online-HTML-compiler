@@ -23,23 +23,6 @@
   background-color: black;
 }
 
-.heading {
-  display: grid;
-  text-align: center;
-}
-
 #execute-btn {
   border-radius: 50%;
-}
-
-#html-heading {
-  color: orange;
-}
-
-#css-heading {
-  color: blue;
-}
-
-#js-heading {
-  color: darkgoldenrod;
 }
