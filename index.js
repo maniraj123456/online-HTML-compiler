@@ -18,3 +18,14 @@ function generateOutput() {
     outputElement.innerHTML = "An error occurred: " + error.message;
   }
 }
+
+
+// Function to resize iframe to fit content
+function adjustIframeHeight() {
+  const iframe = document.querySelector("iframe");
+  console.log(iframe.contentWindow.document.body.scrollHeight + "px");
+  (iframe != null) ? iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px" : null;
+}
+
+// Call the function once iframe is loaded
+document.querySelector("iframe").onload = adjustIframeHeight();

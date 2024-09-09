@@ -1,0 +1,16 @@
+
+.heading {
+  display: grid;
+  text-align: center;
+}
+#html-heading {
+  color: orange;
+}
+
+#css-heading {
+  color: blue;
+}
+
+#js-heading {
+  color: darkgoldenrod;
+}
