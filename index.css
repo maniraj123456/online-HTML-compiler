@@ -23,7 +23,7 @@
   background-color: black;
 }
 
-.right
+.right, .left
 {
   border : 1px solid black;
 }
