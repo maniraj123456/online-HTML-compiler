@@ -23,6 +23,7 @@
   background-color: black;
 }
 
-#execute-btn {
-  border-radius: 50%;
+.right
+{
+  border : 1px solid black;
 }
