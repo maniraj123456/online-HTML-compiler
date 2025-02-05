@@ -27,3 +27,8 @@
 {
   border : 1px solid black;
 }
+
+.sub-heading
+{
+  border-bottom : 1px solid black;
+}
