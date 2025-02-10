@@ -3,15 +3,18 @@
   text-align: center;
 }
 #html-heading {
-  color: orange;
+  color: white;
+  background-color: orange;
 }
 
 #css-heading {
-  color: blue;
+  color: white;
+  background-color: blue;
 }
 
 #js-heading {
-  color: darkgoldenrod;
+  color: black;
+  background-color: yellow;
 }
 
 body {
